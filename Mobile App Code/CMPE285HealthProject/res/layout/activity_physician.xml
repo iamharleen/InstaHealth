@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cmpe285healthproject.PhysicianActivity" >
+
+	<WebView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"      
+        android:id="@+id/webView" />
+
+	<Spinner
+      android:id="@+id/spec_spinner"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+	  android:layout_below="@+id/webView"
+       />
+
+	<Spinner
+      android:id="@+id/physician_spinner"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+	  android:layout_below="@+id/spec_spinner"
+       />
+
+	 <Button
+        android:id="@+id/get_details"
+        android:layout_width="wrap_content"
+      	android:layout_toRightOf="@+id/spec_spinner"
+      	android:layout_below="@+id/webView"
+      	android:layout_height="wrap_content"
+        android:text="@string/getDetails" />
+	 
+	 <TextView
+		android:id="@+id/physician_text"
+		android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:text="@string/physName"
+     	android:textStyle="bold"
+     	android:visibility="gone"
+     	android:textColor="#0000FF"
+    	android:layout_below="@+id/physician_spinner"
+   	    />
+	 <TextView
+		android:id="@+id/physician_name"
+		android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:visibility="gone"
+       	android:layout_toRightOf="@+id/physician_text"
+    	android:layout_below="@+id/physician_spinner"
+   	    />
+	 
+	 <TextView
+		android:id="@+id/spec_text"
+		android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:text="@string/specIn"
+     	android:visibility="gone"
+     	android:textStyle="bold"
+     	android:textColor="#0000FF"
+    	android:layout_below="@+id/physician_name"
+   	    />
+	 <TextView
+		android:id="@+id/spec_name"
+		android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:visibility="gone"
+     	android:layout_toRightOf="@+id/spec_text"
+    	android:layout_below="@+id/physician_name"
+   	    />
+	 
+	 <TextView
+		android:id="@+id/hospital_text"
+		android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:text="@string/hosp"
+     	android:visibility="gone"
+     	android:textStyle="bold"
+     	android:textColor="#0000FF"
+    	android:layout_below="@+id/spec_name"
+   	    />
+	 <TextView
+		android:id="@+id/hospital_name"
+		android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:visibility="gone"
+     	android:layout_toRightOf="@+id/hospital_text"
+    	android:layout_below="@+id/spec_name"
+   	    />
+	 
+	 <TextView
+		android:id="@+id/desc_text"
+		android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:text="@string/desc"
+     	android:textStyle="bold"
+     	android:visibility="gone"
+     	android:textColor="#0000FF"
+    	android:layout_below="@+id/hospital_name"
+   	    />
+	 <TextView
+		android:id="@+id/desc_name"
+		android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:visibility="gone"
+     	android:layout_toRightOf="@+id/desc_text"
+    	android:layout_below="@+id/hospital_name"
+   	    />
+	 
+	 <TextView
+		android:id="@+id/rating_text"
+		android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:text="@string/rating"
+     	android:textStyle="bold"
+     	android:visibility="gone"
+     	android:textColor="#0000FF"
+    	android:layout_below="@+id/desc_name"
+   	    />
+	 <TextView
+		android:id="@+id/rating_name"
+		android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:visibility="gone"
+     	android:layout_toRightOf="@+id/rating_text"
+    	android:layout_below="@+id/desc_name"
+   	    />
+
+	 
+</RelativeLayout>

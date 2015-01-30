@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cmpe285healthproject.AppointmentActivity" >
+
+    <WebView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"      
+        android:id="@+id/webView" />
+    
+     <TextView
+		android:id="@+id/physician_text"
+		android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:text="@string/physName"
+     	android:layout_marginTop="15dp"
+     	android:textStyle="bold"
+     	android:textColor="#0000FF"
+    	android:layout_below="@+id/webView"
+   	    />
+    <Spinner
+      android:id="@+id/physician_spinner"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toRightOf="@+id/physician_text"
+	  android:layout_below="@+id/webView"
+       />
+
+	 
+	 <TextView
+		android:id="@+id/date_text"
+		android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:text="@string/date"
+     	android:layout_marginTop="15dp"
+     	android:textStyle="bold"
+     	android:textColor="#0000FF"
+    	android:layout_below="@+id/physician_spinner"
+   	    />
+	 
+	 <EditText
+		android:id="@+id/date"
+		android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:layout_toRightOf="@+id/date_text"
+    	android:layout_below="@+id/physician_spinner"
+    	android:inputType="date"
+   	    />
+	 
+	 <!-- 
+	 <CalendarView
+        android:id="@+id/calendarView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/physician_spinner"
+        android:layout_toRightOf="@+id/date_text" />
+	  -->
+	 
+	 
+	 <TextView
+		android:id="@+id/time_text"
+		android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:text="@string/ptime"
+     	android:textStyle="bold"
+     	android:layout_marginTop="10dp"
+     	android:textColor="#0000FF"
+    	android:layout_below="@+id/date_text"
+   	    />
+	 <EditText
+		android:id="@+id/time_name"
+		android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:layout_toRightOf="@+id/time_text"
+    	android:layout_below="@+id/date_text"
+    	android:inputType="datetime"
+    	android:hint="@string/timehint"
+   	    />
+	 
+	 
+	 <TextView
+		android:id="@+id/email_text"
+		android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:text="@string/pemail"
+     	android:layout_marginTop="10dp"
+     	android:textStyle="bold"
+     	android:textColor="#0000FF"
+    	android:layout_below="@+id/time_text"
+   	    />
+	 <EditText
+		android:id="@+id/email_name"
+		android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:layout_toRightOf="@+id/email_text"
+     	android:hint="@string/emailhint"
+     	android:inputType="textEmailAddress"
+    	android:layout_below="@+id/time_text"
+   	    />
+	 
+	 <TextView
+		android:id="@+id/contact_text"
+		android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:text="@string/pcontact"
+     	android:layout_marginTop="10dp"
+     	android:textStyle="bold"
+     	android:textColor="#0000FF"
+    	android:layout_below="@+id/email_text"
+   	    />
+	 <EditText
+		android:id="@+id/contact_name"
+		android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:hint="@string/contacthint"
+     	android:inputType="phone"
+     	android:layout_toRightOf="@+id/contact_text"
+    	android:layout_below="@+id/email_text"
+   	    />
+ 
+     <Button
+        android:id="@+id/send"
+        style="@style/textStyle2"   	
+        android:layout_below="@+id/contact_name"
+        android:text="@string/sendEmail" />
+</RelativeLayout>

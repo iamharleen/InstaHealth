@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Insta Health</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		 <script src="js/mobile.js"></script>
+		<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+<script type="text/javascript">
+			function getCookie(name) {
+				 var value = "; " + document.cookie;
+				 var parts = value.split("; " + name + "=");
+				 if (parts.length == 2) return parts.pop().split(";").shift();
+			}
+			function setCookie(user, pwd) {
+				var now = new Date(),
+					time = now.getTime();
+					time += 3600 * 1000;
+					now.setTime(time);
+					document.cookie="username="+user+"; expires="+now.toUTCString()+"; path=/";
+					document.cookie="password="+pwd+"; expires="+now.toUTCString()+"; path=/";
+					
+					//document.getElementById("unique").innerHTML=getCookie("password");
+					document.getElementById("uni").value = document.cookie;
+					
+			}
+			
+
+		</script>	
+<script>
+function launchHomeWindow() {
+       AndroidFunction.launchHome();
+   }  
+   function launchHospitalWindow() {
+       AndroidFunction.launchHospital();
+   }
+   function callPhoneWindow(phone) {
+       AndroidFunction.callPhone(phone);
+   }
+   function openMapWindow() {
+       AndroidFunction.openMap();
+   }
+   function launchPhysicianWindow() {
+       AndroidFunction.launchPhysician();
+   }
+   function launchAppointmentWindow() {
+       AndroidFunction.launchAppointment();
+   }
+   function launchHelplineWindow() {
+       AndroidFunction.launchHelpline();
+   }
+   function launchAmbulanceWindow() {
+       AndroidFunction.launchAmbulance();
+   }
+   function launchHealthTipsWindow() {
+       AndroidFunction.launchHealthTips();
+   }
+   function launchParkingWindow() {
+       AndroidFunction.launchParking();
+   }
+   function launchLoginWindow() {
+       AndroidFunction.launchLogin();
+   }
+   function launchSignUpWindow() {
+       AndroidFunction.launchSignUp();
+   }
+   
+								
+</script>
+	
+	</head>
+	<body>
+		<!---start-wrap---->
+		
+			<!---start-wrap---->
+		<div id="w3-universal-nav">
+    	<ul id="header" id="top">
+    		<div class="top-header">
+						<div class="wrap">
+						<div class="top-header-left">
+							<p>+800-020-12345</p>
+						</div>
+						<div class="right-left">
+							<ul>
+								<li class="login"><a href="#Login" onclick="return launchLoginWindow();">Login</a></li>
+								<li class="sign"><a href="#SignUp" onclick="return launchSignUpWindow();">Sign up</a></li>
+							</ul>
+						</div>
+						<div class="clear"> </div>
+					</div>
+				</div>
+    		<div class="wrap">
+    			<div class="logo">
+    				<a href="index.html"><img src="images/logo.png" alt=""/></a>
+    			</div>
+    			<div class="social-links">
+								<ul>
+									<li><a href="#"><img src="images/facebook.png" title="facebook" /></a></li>
+									<li><a href="#"><img src="images/twitter.png" title="twitter" /></a></li>
+									<li><a href="#"><img src="images/feed.png" title="Rss" /></a></li>
+									<div class="clear"> </div>
+								</ul>
+				</div>
+    	</ul>
+    	<div id="w3-mobile-options">
+    		<li id="w3-menu-trigger">
+    			<li id="w3-search-trigger">
+    				<a href="#">Search</a>
+    			</li>
+    	</div>
+    	<ul id="w3-menu-links" style="display: none;">
+    	</ul>
+    	<div id="w3-search-module" style="display: none;">
+    		<form id="w3-search-form" action="/Search/" method="get">
+    			<p>
+    				<label for="q">
+    					<span class="w3-access">Search</span>
+    				</label>
+    				<input accesskey="s" type="text" maxlength="100" value="" name="q" id="q"><input type="hidden" value="17" name="v">
+    			</p>
+    		</form>
+    		</div>
+    		</div>
+</div>
+<!-- The menu -->
+  <nav class="clearfix">
+					<ul>
+								<li class="active"><a href="#Home" onclick="return launchHomeWindow();">Home</a></li>
+								<li><a href="#Hospital" onclick="return launchHospitalWindow();">Hospital</a></li>
+								<li><a href="#Physician" onclick="return launchPhysicianWindow();">Physician</a></li>
+								<li><a href="#Appointment" onclick="return launchAppointmentWindow();">Appointment</a></li>
+								<li><a href="#Helpline" onclick="return launchHelplineWindow();">Helpline</a></li>								
+								<li><a href="#Ambulance" onclick="return launchAmbulanceWindow();">Ambulance</a></li>
+								<li><a href="#HealthTips" onclick="return launchHealthTipsWindow();">HealthTips</a></li>
+								<li><a href="#Parking" onclick="return launchParkingWindow();">Parking</a></li>
+								<div class="clear"> </div>
+					</ul>
+		<a href="#" id="pull">Menu</a>
+	</nav>
+			<div class="clear"> </div>
+			<!---start-images-slider---->
+			<div class="image-slider">
+						<!-- Slideshow 1 -->
+					    <ul class="rslides rslides1" id="slider1" style="max-width: 2500px;">
+					      <li id="rslides1_s0" class="" style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; -webkit-transition: opacity 600ms ease-in-out; transition: opacity 600ms ease-in-out;">
+					      	<img src="images/slider3.png" alt="">
+					      </li>
+					      <li id="rslides1_s1" class="" style="float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; -webkit-transition: opacity 600ms ease-in-out; transition: opacity 600ms ease-in-out;"><img src="images/slider2.png" alt="">
+					      </li>
+					      <li id="rslides1_s2" class="rslides1_on" style="float: left; position: relative; opacity: 1; z-index: 2; display: list-item; -webkit-transition: opacity 600ms ease-in-out; transition: opacity 600ms ease-in-out;"><img src="images/slider2.png" alt="">
+					      </li>
+					    </ul>
+						 <!-- Slideshow 2 -->
+					</div>
+			<!---End-images-slider---->
+		</div>
+		<h2><font color="blue">Please login to take Appointment</font</h2>
+		<!---End-wrap---->
+	</body>
+</html>
+

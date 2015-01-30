@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cmpe285healthproject.AmbulanceActivity" >
+
+    <WebView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"      
+        android:id="@+id/webView" />
+
+	<Spinner
+      android:id="@+id/location_spinner"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+	  android:layout_below="@+id/webView"
+       />
+
+	<Spinner
+      android:id="@+id/provider_spinner"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+	  android:layout_below="@+id/location_spinner"
+       />
+
+	
+	 <Button
+        android:id="@+id/get_details"
+        android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+        android:layout_below="@+id/provider_spinner"
+        android:text="@string/getDetails" />
+	 
+	 <TextView
+		android:id="@+id/ambulance_text"
+		android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:layout_toRightOf="@+id/get_details"
+     	style="@style/textStyle"  
+     	android:textStyle="bold"   	
+     	android:text="@string/ambulanceName" 
+    	android:layout_below="@+id/provider_spinner"
+   	    />	 
+	 <TextView
+        android:id="@+id/ambulance_name"
+        android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:layout_toRightOf="@+id/ambulance_text"
+      	android:textColor="#0000FF"
+        android:layout_below="@+id/provider_spinner"
+     	style="@style/textStyle"  
+        />
+
+	 <TextView
+		android:id="@+id/provider_text"
+		android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	style="@style/textStyle"  
+     	android:layout_toRightOf="@+id/get_details"
+     	android:textStyle="bold"   	
+     	android:text="@string/providerAddress" 
+    	android:layout_below="@+id/ambulance_name"
+   	    />	 
+	 <TextView
+        android:id="@+id/provider_name"
+        android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:layout_toRightOf="@+id/provider_text"
+      	android:textColor="#0000FF"
+        android:layout_below="@+id/ambulance_name"
+     	style="@style/textStyle"  
+        />
+	 
+	 <TextView
+		android:id="@+id/ambulance_no_text"
+		android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	style="@style/textStyle"  
+     	android:layout_toRightOf="@+id/get_details"
+     	android:textStyle="bold"   	
+     	android:text="@string/ambulanceNo" 
+    	android:layout_below="@+id/provider_name"
+   	    />	 
+	 <TextView
+        android:id="@+id/ambulance_no"
+        android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:layout_toRightOf="@+id/ambulance_no_text"
+      	android:textColor="#0000FF"
+        android:layout_below="@+id/provider_name"
+     	style="@style/textStyle"  
+        />
+</RelativeLayout>

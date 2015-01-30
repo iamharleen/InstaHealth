@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="cmpe285team14" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\IEUser\\documents\\visual\ studio\ 2013\\Projects\\CMPE285HealthProject\\CMPE285HealthProject\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\IEUser\\documents\\visual\ studio\ 2013\\Projects\\CMPE285HealthProject\\CMPE285HealthProject\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="Add write permission to App_Data Folder" description="Add write permission to App_Data folder" value="cmpe285team14/App_Data" tags="Hidden">
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\IEUser\\documents\\visual\ studio\ 2013\\Projects\\CMPE285HealthProject\\CMPE285HealthProject\\obj\\Release\\Package\\PackageTmp\\App_Data$" />
+  </parameter>
+  <parameter name="ConnString-Web.config Connection String" description="ConnString Connection String used in web.config by the application to access the database." value="Data Source=rvowyysewd.database.windows.net;Initial Catalog=HealthCare;Persist Security Info=True;User ID=team14;Password=Cmpe_285" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\IEUser\\documents\\visual\ studio\ 2013\\Projects\\CMPE285HealthProject\\CMPE285HealthProject\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ConnString']/@connectionString" />
+  </parameter>
+</parameters>

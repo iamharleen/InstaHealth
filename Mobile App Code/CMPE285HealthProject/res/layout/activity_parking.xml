@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cmpe285healthproject.ParkingActivity" >
+
+    <WebView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"      
+        android:id="@+id/webView" />
+ 
+    
+	<Spinner
+      android:id="@+id/hospital_spinner"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+	  android:layout_below="@+id/webView"
+       />
+	
+	<TextView
+     android:id="@+id/totalText"    
+     android:text="@string/totalText"
+     style="@style/textStyle"
+     android:layout_below="@+id/hospital_spinner"
+     />
+
+		<TextView
+		android:id="@+id/total_park"
+    	android:layout_below="@+id/hospital_spinner"
+    	android:layout_toRightOf="@+id/totalText"
+    	android:textColor="#0000FF"
+    	style="@style/textStyle" />
+	 
+		<TextView
+     android:id="@+id/disableText"
+     android:text="@string/disableText"
+     android:layout_below="@+id/totalText"
+     style="@style/textStyle"
+     />
+		
+	 <TextView
+		android:id="@+id/disable_park"
+    	android:layout_below="@+id/total_park"
+    	android:layout_toRightOf="@+id/disableText"
+    	android:textColor="#0000FF"
+   	    style="@style/textStyle" />
+	 
+	 <TextView
+     android:id="@+id/costText"
+     android:text="@string/costText"
+     android:layout_below="@+id/disableText"
+     style="@style/textStyle"
+     />
+	 
+	 <TextView
+		android:id="@+id/cost"
+    	android:layout_below="@+id/disable_park"
+    	android:layout_toRightOf="@+id/costText"
+    	android:textColor="#0000FF"
+   	    style="@style/textStyle" />
+	 
+
+</RelativeLayout>

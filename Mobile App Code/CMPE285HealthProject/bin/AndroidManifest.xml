@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cmpe285healthproject"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="com.example.whattowear.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HospitalActivity"
+            android:label="@string/title_activity_hospital" >
+        </activity>
+        <activity
+            android:name=".ParkingActivity"
+            android:label="@string/title_activity_parking" >
+        </activity>
+        <activity
+            android:name=".HealthTipsActivity"
+            android:label="@string/title_activity_health_tips" >
+        </activity>
+        <activity
+            android:name=".ListAdapter"
+            android:label="@string/title_activity_list_adapter" >
+        </activity>
+        <activity
+            android:name=".PhysicianActivity"
+            android:label="@string/title_activity_physician" >
+        </activity>
+        <activity
+            android:name=".AppointmentActivity"
+            android:label="@string/title_activity_appointment" >
+        </activity>
+        <activity
+            android:name=".HelplineActivity"
+            android:label="@string/title_activity_helpline" >
+        </activity>
+        <activity
+            android:name=".AmbulanceActivity"
+            android:label="@string/title_activity_ambulance" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+    </application>
+
+</manifest>

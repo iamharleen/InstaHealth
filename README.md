@@ -48,3 +48,12 @@ Following technologies have been used in order to develop this project
 * Praneeta Soley
 * Rishma Chitnis
 
+##System Diagram
+![](https://github.com/iamharleen/InstaHealth/blob/master/assets/systemDiagram.png)
+
+##Homepage Snapshot
+![](https://github.com/iamharleen/InstaHealth/blob/master/assets/homepage.png)
+
+##Hospital Search Snapshot
+![](https://github.com/iamharleen/InstaHealth/blob/master/assets/hospitalSearch.png)
+
